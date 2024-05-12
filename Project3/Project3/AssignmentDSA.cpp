@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <vector>
 #include <algorithm>
 #include <string>
@@ -6,6 +6,10 @@
 
 using namespace std;
 /*HW - 1 GREEDY ALGORITM*/
+/*This program about Complete the function
+maxMeetings() that takes two arrays start[] and end[] along with their size
+N as input parameters and returns the maximum number of meetings that can be held in the meeting room*/
+
 //struct Meeting {
 //    int start;
 //    int end;
@@ -49,6 +53,10 @@ using namespace std;
 
 
 /* HW-2 GREEDY ALGORITM*/
+/*this program about Each job takes 1 unit of time to complete and only one job can be scheduled
+at a time. We earn the profit associated with job if and only if the job is
+completed by its deadline*/
+
 //struct Job {
 //    int id;
 //    int deadline;
@@ -91,6 +99,8 @@ using namespace std;
 
 
 /*HW - 3 RETURN DYNAMIC PROGRAM HW-2 */
+/* this program same with HW-2 but dynamıc form*/
+
 //struct Job {
 //    int id;
 //    int deadline;
@@ -138,6 +148,11 @@ using namespace std;
 
 
 /*HW - 4 GREEDY ALGORITM */
+/* this program about You are given N pairs of numbers. In every pair, the first number is always
+smaller than the second number. A pair (c, d) can follow another pair (a, b) if b
+< c. Chain of pairs can be formed in this fashion. You have to find the longest
+chain which can be formed from the given set of pairs*/
+
 //struct Pair {
 //    int first;
 //    int second;
@@ -172,6 +187,8 @@ using namespace std;
 
 
 /*HW - 5 RETURN DYNAMIC PROGRAM HW-4*/
+/* this program same with HW-4 but dynamıc form*/
+
 //struct Pair {
 //    int first;
 //    int second;
@@ -211,6 +228,7 @@ using namespace std;
 
 
 /*HW - 6  BACKTRACKING*/
+
 //bool isValidMove(int x, int y, int N, vector<vector<int>>& matrix, vector<vector<bool>>& visited) {
 //    return (x >= 0 && x < N && y >= 0 && y < N && matrix[x][y] == 1 && !visited[x][y]);
 //}
@@ -277,6 +295,12 @@ using namespace std;
 
 
 /*HW - 7  BACKTRACKING MAP COLORING*/
+/* Given an undirected graph and an integer M . The task is to determine if the
+graph can be colored with at most M colors such that no two adjacent
+vertices of the graph are colored with the same color. Here coloring of a graph
+means the assignment of colors to all vertices. Print 1 if it is possible to co
+lour vertices and 0 otherwise.*/
+
 //bool isSafe(int vertex, int color, vector<vector<int>>& graph, vector<int>& colors, int N) {
 //    for (int i = 0; i < N; ++i) {
 //        if (graph[vertex][i] && colors[i] == color) {
@@ -334,6 +358,15 @@ using namespace std;
 
 
 /*HW - 8  BACKTRACKING*/
+/*Given a string S containing only digits, Your task is to complete the function genIp()
+which returns a vector containing all possible combinations of valid IPv4
+IP addresses and takes only a string S as its only argument.
+Note:
+Order doesn't matter. A valid IP address must be in the form of A.B.C.D,
+where A, B, C, and D are numbers from 0
+-
+255. The numbers cannot be 0 prefixed unless they are 0 */
+
 //bool isValidSegment(const string& segment) {
 //    if (segment.empty() || segment.size() > 3 || (segment.size() > 1 && segment[0] == '0')) {
 //        return false;
@@ -389,6 +422,11 @@ using namespace std;
 
 
 /*HW - 9 BACKTRACKING*/
+/*this program about Given a dictionary of distinct words and an M x N
+board where every cell has one character. Find all possible words from the dictionary that can be formed
+by a sequence of adjacent characters on the board. We can move to any of 8
+adjacent characters */
+
 //class TrieNode {
 //public:
 //    vector<TrieNode*> children;
@@ -485,6 +523,10 @@ using namespace std;
 
 
 /*HW - 10  DIVIDE AND CONQUER*/
+/*this program about Given two sorted arrays arr1 and arr2 of size N
+and M respectively and an element K . The task is to find the element that would be at the kth position of
+the final sorted array*/
+
 //int kthElement(vector<int>& arr1, vector<int>& arr2, int k) {
 //    int N = arr1.size();
 //    int M = arr2.size();
@@ -536,6 +578,12 @@ using namespace std;
 
 
 /* HW - 11 */
+/* this program about You have N books, each with A[i] number of pages. M
+students need to be allocated contiguous books, with each student getting at least one book.
+Out of all the permutations, the goal is to find the permutation where the sum
+of maximum number of pages in a book allotted to a student should be minimum
+, out of all possible permutations*/
+
 //bool isValidAllocation(vector<int>& books, int students, int maxPages) {
 //    int count = 1;
 //    int pages = 0;
@@ -591,6 +639,16 @@ using namespace std;
 
 
 /* HW - 12 DIVIDE AND CONQUER */
+/*this program about Given two integers m and n , try making a
+special sequence of numbers seq of length n such that
+● seqi+1 >= 2*seq i
+
+● seq i > 0
+
+● seq i <= m
+Your task is to determine total number of such special sequences possible*/
+
+
 //int countSpecialSequences(int m, int n) {
 //    vector<vector<int>> dp(n + 1, vector<int>(m + 1, 0));
 //
